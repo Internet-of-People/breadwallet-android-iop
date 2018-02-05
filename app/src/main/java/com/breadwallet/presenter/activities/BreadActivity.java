@@ -183,7 +183,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
         Uri data = intent.getData();
         if (data == null) return;
         String scheme = data.getScheme();
-        if (scheme != null && (scheme.startsWith("bitcoin") || scheme.startsWith("bitid"))) {
+        if (scheme != null && (scheme.startsWith("iop") || scheme.startsWith("bitid"))) {
             String str = intent.getDataString();
             BitcoinUrlHandler.processRequest(this, str);
         }
@@ -217,7 +217,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
             @Override
             public void onClick(View v) {
                 if (!BRAnimator.isClickAllowed()) return;
-                //start the server for Buy Bitcoin
+                //start the server for Buy IOP
                 BRAnimator.showMenuFragment(BreadActivity.this);
 
             }
@@ -473,9 +473,9 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
                 //current amount in satoshis
                 final BigDecimal amount = new BigDecimal(BRSharedPrefs.getCatchedBalance(BreadActivity.this));
 
-                //amount in BTC units
+                //amount in IOP units
                 BigDecimal btcAmount = BRExchange.getBitcoinForSatoshis(BreadActivity.this, amount);
-                final String formattedBTCAmount = BRCurrency.getFormattedCurrencyString(BreadActivity.this, "BTC", btcAmount);
+                final String formattedBTCAmount = BRCurrency.getFormattedCurrencyString(BreadActivity.this, "IOP", btcAmount);
 
                 //amount in currency units
                 BigDecimal curAmount = BRExchange.getAmountFromSatoshis(BreadActivity.this, iso, amount);

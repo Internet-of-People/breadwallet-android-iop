@@ -139,12 +139,12 @@ public class FingerprintActivity extends BRActivity {
         String iso = BRSharedPrefs.getIso(this);
         //amount in satoshis
         BigDecimal satoshis = new BigDecimal(BRKeyStore.getSpendLimit(this));
-        //amount in BTC, mBTC or bits
-        BigDecimal amount = BRExchange.getAmountFromSatoshis(this, "BTC", satoshis);
+        //amount in IOP, mIOP or µIOP
+        BigDecimal amount = BRExchange.getAmountFromSatoshis(this, "IOP", satoshis);
         //amount in user preferred ISO (e.g. USD)
         BigDecimal curAmount = BRExchange.getAmountFromSatoshis(this, iso, satoshis);
         //formatted string for the label
-        return String.format(getString(R.string.TouchIdSettings_spendingLimit), BRCurrency.getFormattedCurrencyString(this, "BTC", amount), BRCurrency.getFormattedCurrencyString(this, iso, curAmount));
+        return String.format(getString(R.string.TouchIdSettings_spendingLimit), BRCurrency.getFormattedCurrencyString(this, "IOP", amount), BRCurrency.getFormattedCurrencyString(this, iso, curAmount));
     }
 
     @Override

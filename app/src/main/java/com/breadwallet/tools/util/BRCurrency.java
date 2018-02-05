@@ -42,7 +42,7 @@ public class BRCurrency {
     public static final String TAG = BRCurrency.class.getName();
 
 
-    // amount is in currency or BTC (bits, mBTC or BTC)
+    // amount is in currency or IOP (bits, mBTC or IOP)
     public static String getFormattedCurrencyString(Context app, String isoCurrencyCode, BigDecimal amount) {
 //        Log.e(TAG, "amount: " + amount);
         DecimalFormat currencyFormat;
@@ -56,7 +56,7 @@ public class BRCurrency {
         String symbol = null;
         decimalFormatSymbols = currencyFormat.getDecimalFormatSymbols();
 //        int decimalPoints = 0;
-        if (Objects.equals(isoCurrencyCode, "BTC")) {
+        if (Objects.equals(isoCurrencyCode, "IOP")) {
             symbol = BRExchange.getBitcoinSymbol(app);
         } else {
             try {
@@ -79,7 +79,7 @@ public class BRCurrency {
 
     public static String getSymbolByIso(Context app, String iso) {
         String symbol;
-        if (Objects.equals(iso, "BTC")) {
+        if (Objects.equals(iso, "IOP")) {
             String currencySymbolString = BRConstants.bitcoinLowercase;
             if (app != null) {
                 int unit = BRSharedPrefs.getCurrencyUnit(app);
@@ -108,9 +108,9 @@ public class BRCurrency {
         return Utils.isNullOrEmpty(symbol) ? iso : symbol;
     }
 
-    //for now only use for BTC and Bits
+    //for now only use for IOP and Bits
     public static String getCurrencyName(Context app, String iso) {
-        if (Objects.equals(iso, "BTC")) {
+        if (Objects.equals(iso, "IOP")) {
             if (app != null) {
                 int unit = BRSharedPrefs.getCurrencyUnit(app);
                 switch (unit) {
@@ -119,7 +119,7 @@ public class BRCurrency {
                     case BRConstants.CURRENT_UNIT_MBITS:
                         return "MBits";
                     case BRConstants.CURRENT_UNIT_BITCOINS:
-                        return "BTC";
+                        return "IOP";
                 }
             }
         }
@@ -129,7 +129,7 @@ public class BRCurrency {
     public static int getMaxDecimalPlaces(String iso) {
         if (Utils.isNullOrEmpty(iso)) return 8;
 
-        if (iso.equalsIgnoreCase("BTC")) {
+        if (iso.equalsIgnoreCase("IOP")) {
             return 8;
         } else {
             Currency currency = Currency.getInstance(iso);

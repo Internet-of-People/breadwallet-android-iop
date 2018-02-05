@@ -109,8 +109,8 @@ public class BRConstants {
     public static final int CURRENT_UNIT_MBITS = 1;
     public static final int CURRENT_UNIT_BITCOINS = 2;
 
-    public static final String bitcoinLowercase = "\u0180";
-    public static final String bitcoinUppercase = "\u0243";
+    public static final String bitcoinLowercase = "iop";
+    public static final String bitcoinUppercase = "IOP";
 
     public static final long PASS_CODE_TIME_LIMIT = TimeUnit.MILLISECONDS.convert(6, TimeUnit.DAYS);
 
@@ -130,9 +130,9 @@ public class BRConstants {
     public static final String fingerprintSpendingLimit = "fingerprint-spending-limit";
     public static final String transactionDetails = "transaction-details";
 //    public static final String manageWallet = "manage-wallet";
-    public static final String receive = "receive-bitcoin";
+    public static final String receive = "receive-iop";
     public static final String requestAmount = "request-amount";
-    public static final String send = "send-bitcoin";
+    public static final String send = "send-iop";
     public static final String walletDisabled = "wallet-disabled";
     public static final String resetPinWithPaperKey = "reset-pin-paper-key";
     public static final String setPin = "set-pin";

@@ -407,7 +407,7 @@ public class BRWalletManager {
             BRExecutor.getInstance().forMainThreadTasks().execute(new Runnable() {
                 @Override
                 public void run() {
-                    String am = BRCurrency.getFormattedCurrencyString(ctx, "BTC", BRExchange.getBitcoinForSatoshis(ctx, new BigDecimal(amount)));
+                    String am = BRCurrency.getFormattedCurrencyString(ctx, "IOP", BRExchange.getBitcoinForSatoshis(ctx, new BigDecimal(amount)));
                     String amCur = BRCurrency.getFormattedCurrencyString(ctx, BRSharedPrefs.getIso(ctx), BRExchange.getAmountFromSatoshis(ctx, BRSharedPrefs.getIso(ctx), new BigDecimal(amount)));
                     String formatted = String.format("%s (%s)", am, amCur);
                     String strToShow = String.format(ctx.getString(R.string.TransactionDetails_received), formatted);
@@ -637,11 +637,11 @@ public class BRWalletManager {
     public native byte[] tryTransaction(String addressHolder, long amountHolder);
 
     // returns the given amount (amount is in satoshis) in local currency units (i.e. pennies, pence)
-    // price is local currency units per bitcoin
+    // price is local currency units per iop
     public native long localAmount(long amount, double price);
 
     // returns the given local currency amount in satoshis
-    // price is local currency units (i.e. pennies, pence) per bitcoin
+    // price is local currency units (i.e. pennies, pence) per iop
     public native long bitcoinAmount(long localAmount, double price);
 
     public native void walletFreeEverything();
