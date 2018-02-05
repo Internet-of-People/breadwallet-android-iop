@@ -486,7 +486,7 @@
   <string name="Settings.currency">表示される通貨</string>
   <!-- Join Early access label -->
   <string name="Settings.earlyAccess">早期アクセスに参加</string>
-  <!-- Are you enjoying bread alert message body -->
+  <!-- Are you enjoying IOP Wallet alert message body -->
   <string name="Settings.enjoying">ブレッドをお楽しみいただいていますか?</string>
   <!-- Import wallet label -->
   <string name="Settings.importTitle">ウォレットをインポート</string>
@@ -558,7 +558,7 @@
   <string name="TouchIdSettings.spendingLimit">利用限度: %1$s (%2$s)</string>
   <!-- Touch id switch label. -->
   <string name="TouchIdSettings.switchLabel">ブレッドでTouch IDの有効化</string>
-  <!-- Enable fingerprint for this wallet called Bread -->
+  <!-- Enable fingerprint for this wallet called IOP Wallet -->
   <string name="TouchIdSettings.switchLabel.android">指紋認証を有効にする</string>
   <!-- Touch ID settings view title -->
   <string name="TouchIdSettings.title">Touch ID</string>
