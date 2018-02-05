@@ -105,9 +105,9 @@ public class BRConstants {
     /**
      * Currency units
      */
-    public static final int CURRENT_UNIT_BITS = 0;
-    public static final int CURRENT_UNIT_MBITS = 1;
-    public static final int CURRENT_UNIT_BITCOINS = 2;
+    public static final int CURRENT_UNIT_MICRO_IOPS = 0;
+    public static final int CURRENT_UNIT_MIOPS = 1;
+    public static final int CURRENT_UNIT_IOPS = 2;
 
     public static final String bitcoinLowercase = "iop";
     public static final String bitcoinUppercase = "IOP";

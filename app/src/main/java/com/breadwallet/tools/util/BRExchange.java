@@ -9,7 +9,7 @@ import com.breadwallet.wallet.BRWalletManager;
 
 import java.math.BigDecimal;
 
-import static com.breadwallet.tools.util.BRConstants.CURRENT_UNIT_BITS;
+import static com.breadwallet.tools.util.BRConstants.CURRENT_UNIT_MICRO_IOPS;
 import static com.breadwallet.tools.util.BRConstants.ROUNDING_MODE;
 
 /**
@@ -54,15 +54,15 @@ public class BRExchange {
         BigDecimal result = new BigDecimal(0);
         int unit = BRSharedPrefs.getCurrencyUnit(app);
         switch (unit) {
-            case CURRENT_UNIT_BITS:
+            case CURRENT_UNIT_MICRO_IOPS:
                 //µIOP
                 result = new BigDecimal(String.valueOf(amount)).divide(new BigDecimal("100"), 2, ROUNDING_MODE);
                 break;
-            case BRConstants.CURRENT_UNIT_MBITS:
+            case BRConstants.CURRENT_UNIT_MIOPS:
                 //mIOP
                 result = new BigDecimal(String.valueOf(amount)).divide(new BigDecimal("100000"), 5, ROUNDING_MODE);
                 break;
-            case BRConstants.CURRENT_UNIT_BITCOINS:
+            case BRConstants.CURRENT_UNIT_IOPS:
                 //IOP
                 result = new BigDecimal(String.valueOf(amount)).divide(new BigDecimal("100000000"), 8, ROUNDING_MODE);
                 break;
@@ -74,13 +74,13 @@ public class BRExchange {
         BigDecimal result = new BigDecimal(0);
         int unit = BRSharedPrefs.getCurrencyUnit(app);
         switch (unit) {
-            case CURRENT_UNIT_BITS:
+            case CURRENT_UNIT_MICRO_IOPS:
                 result = new BigDecimal(String.valueOf(amount)).multiply(new BigDecimal("100"));
                 break;
-            case BRConstants.CURRENT_UNIT_MBITS:
+            case BRConstants.CURRENT_UNIT_MIOPS:
                 result = new BigDecimal(String.valueOf(amount)).multiply(new BigDecimal("100000"));
                 break;
-            case BRConstants.CURRENT_UNIT_BITCOINS:
+            case BRConstants.CURRENT_UNIT_IOPS:
                 result = new BigDecimal(String.valueOf(amount)).multiply(new BigDecimal("100000000"));
                 break;
         }
@@ -92,16 +92,16 @@ public class BRExchange {
         if (app != null) {
             int unit = BRSharedPrefs.getCurrencyUnit(app);
             switch (unit) {
-                case CURRENT_UNIT_BITS:
+                case CURRENT_UNIT_MICRO_IOPS:
                     currencySymbolString = "µ" + BRConstants.bitcoinUppercase;
 //                        decimalPoints = 2;
 //                    if (getNumberOfDecimalPlaces(result.toPlainString()) == 1)
 //                        currencyFormat.setMinimumFractionDigits(1);
                     break;
-                case BRConstants.CURRENT_UNIT_MBITS:
+                case BRConstants.CURRENT_UNIT_MIOPS:
                     currencySymbolString = "m" + BRConstants.bitcoinUppercase;
                     break;
-                case BRConstants.CURRENT_UNIT_BITCOINS:
+                case BRConstants.CURRENT_UNIT_IOPS:
                     currencySymbolString = BRConstants.bitcoinUppercase;
                     break;
             }

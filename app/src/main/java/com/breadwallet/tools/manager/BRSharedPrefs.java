@@ -1,6 +1,5 @@
 package com.breadwallet.tools.manager;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
@@ -16,7 +15,6 @@ import java.util.Locale;
 import java.util.UUID;
 
 import static com.breadwallet.tools.util.BRConstants.GEO_PERMISSIONS_REQUESTED;
-import static com.breadwallet.tools.util.BRConstants.receive;
 
 /**
  * BreadWallet
@@ -370,7 +368,7 @@ public class BRSharedPrefs {
 
     public static int getCurrencyUnit(Context context) {
         SharedPreferences settingsToGet = context.getSharedPreferences(BRConstants.PREFS_NAME, 0);
-        return settingsToGet.getInt(BRConstants.CURRENT_UNIT, BRConstants.CURRENT_UNIT_BITS);
+        return settingsToGet.getInt(BRConstants.CURRENT_UNIT, BRConstants.CURRENT_UNIT_IOPS);
     }
 
     public static void putCurrencyUnit(Context context, int unit) {
