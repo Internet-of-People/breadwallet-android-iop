@@ -51,8 +51,8 @@
 
                     <ImageView
                         android:id="@+id/wallet_name_text"
-                        android:layout_width="128dp"
-                        android:layout_height="64dp"
+                        android:layout_width="280dp"
+                        android:layout_height="65dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
                         android:src="@drawable/ic_bread_logo_white"
@@ -112,7 +112,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintLeft_toRightOf="@+id/equals"
                         app:layout_constraintTop_toBottomOf="@+id/wallet_name_text"
-                        app:layout_constraintVertical_bias="0.492"/>
+                        app:layout_constraintVertical_bias="0.492" />
 
                     <global.iop.wallet.presenter.customviews.BRText
                         android:id="@+id/price_change_text"
@@ -143,11 +143,11 @@
                         android:id="@+id/search_icon"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:layout_marginBottom="40dp"
-                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginRight="16dp"
                         android:background="@drawable/ic_search_black_24dp"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"/>
+                        app:layout_constraintRight_toRightOf="parent" />
 
                 </android.support.constraint.ConstraintLayout>
             </android.support.v7.widget.Toolbar>

@@ -26,23 +26,24 @@
     <item name="intro_status_bar" type="color">#ffbf7f</item>
     <item name="warning_status_bar" type="color">#7f5225</item>
     <item name="camera_guideline" type="color">#50636363</item>
+    <item name="iop_green" type="color">#0cafa5</item>
 
-    <item name="logo_gradient_start" type="color">#6cc8f0</item>
+    <item name="logo_gradient_start" type="color">#0cafa5</item>
     <item name="logo_gradient_end" type="color">#0cafa5</item>
 
-    <item name="finger_gradient_start" type="color">#6cc8f0</item>
+    <item name="finger_gradient_start" type="color">#0cafa5</item>
     <item name="finger_gradient_end" type="color">#0cafa5</item>
 
-    <item name="recover_gradient_start" type="color">#6cc8f0</item>
+    <item name="recover_gradient_start" type="color">#0cafa5</item>
     <item name="recover_gradient_end" type="color">#0cafa5</item>
 
-    <item name="restore_gradient_start" type="color">#6cc8f0</item>
+    <item name="restore_gradient_start" type="color">#0cafa5</item>
     <item name="restore_gradient_end" type="color">#0cafa5</item>
 
-    <item name="import_gradient_start" type="color">#6cc8f0</item>
+    <item name="import_gradient_start" type="color">#0cafa5</item>
     <item name="import_gradient_end" type="color">#0cafa5</item>
 
-    <item name="write_phrase_gradient_start" type="color">#6cc8f0</item>
+    <item name="write_phrase_gradient_start" type="color">#0cafa5</item>
     <item name="write_phrase_gradient_end" type="color">#0cafa5</item>
 
     <item name="pin_pad_text" type="color">#A3A8AE</item>
