@@ -703,7 +703,7 @@
   <!-- Updating webview message -->
   <string name="Webview.updating">Updating...</string>
   <!-- Welcome screen text. (?) will be replaced with the help icon users should look for. -->
-  <string name="Welcome.body">Breadwallet has changed its name to IOP Wallet, with a brand new look and some new features.\n\nIf you need help, look for the (?) in the top right of most screens.</string>
+  <string name="Welcome.body">IOP Wallet, with a brand new look and some new features.\n\nIf you need help, look for the (?) in the top right of most screens.</string>
   <!-- Top title of welcome screen -->
   <string name="Welcome.title">Welcome to IOP Wallet!</string>
   <!-- Wipe wallet alert message -->
