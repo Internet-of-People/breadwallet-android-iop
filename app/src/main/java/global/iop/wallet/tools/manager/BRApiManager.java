@@ -189,10 +189,42 @@ public class BRApiManager {
             JSONObject obj = new JSONObject(jsonString);
 
             jsonArray = obj.getJSONArray("data");
+
+            Double iopBtcPrice = getIopBtcPrice(activity);
+
+            //Update rates with IOP BTC price
+            if(iopBtcPrice != null) {
+                for (int i = 1; i < jsonArray.length(); i++) {
+                    try {
+                        JSONObject tmpObj = (JSONObject) jsonArray.get(i);
+                        Double price = tmpObj.getDouble("rate") * iopBtcPrice;
+                        tmpObj.put("rate", price);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
         return jsonArray;
+    }
+
+    public static Double getIopBtcPrice(Activity activity) {
+        String jsonString = urlGET(activity, "https://api.coinmarketcap.com/v1/ticker/internet-of-people");
+
+        Double price = null;
+        if (jsonString == null) return null;
+        try {
+            JSONArray arr = new JSONArray(jsonString);
+            JSONObject obj = arr.getJSONObject(0);
+
+            price = obj.getDouble("price_btc");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return price;
     }
 
     public static void updateFeePerKb(Context app) {
