@@ -63,6 +63,8 @@ import okhttp3.Response;
 public class BRApiManager {
     private static final String TAG = BRApiManager.class.getName();
 
+    private static final int DEFAULT_FEE_PER_KB = 2000;
+
     private static BRApiManager instance;
     private Timer timer;
 
@@ -196,7 +198,10 @@ public class BRApiManager {
     public static void updateFeePerKb(Context app) {
         String jsonString = urlGET(app, "https://" + BreadApp.HOST + "/fee-per-kb");
         if (jsonString == null || jsonString.isEmpty()) {
-            Log.e(TAG, "updateFeePerKb: failed to update fee, response string: " + jsonString);
+            /* Set a default fee if api is not reachable */
+            Log.i(TAG, "updateFeePerKb: set default fee: " + DEFAULT_FEE_PER_KB);
+            setFeePerKb(app, DEFAULT_FEE_PER_KB);
+            BRSharedPrefs.putEconomyFeePerKb(app, DEFAULT_FEE_PER_KB);
             return;
         }
         long fee;
@@ -206,9 +211,7 @@ public class BRApiManager {
             fee = obj.getLong("fee_per_kb");
             economyFee = obj.getLong("fee_per_kb_economy");
             if (fee != 0 && fee < BRWalletManager.getInstance().maxFee()) {
-                BRSharedPrefs.putFeePerKb(app, fee);
-                BRWalletManager.getInstance().setFeePerKb(fee, isEconomyFee); //todo improve that logic
-                BRSharedPrefs.putFeeTime(app, System.currentTimeMillis()); //store the time of the last successful fee fetch
+                setFeePerKb(app, fee);
             } else {
                 FirebaseCrash.report(new NullPointerException("Fee is weird:" + fee));
             }
@@ -222,6 +225,12 @@ public class BRApiManager {
             BRReportsManager.reportBug(e);
             BRReportsManager.reportBug(new IllegalArgumentException("JSON ERR: " + jsonString));
         }
+    }
+
+    private static void setFeePerKb(Context app, long fee) {
+        BRSharedPrefs.putFeePerKb(app, fee);
+        BRWalletManager.getInstance().setFeePerKb(fee, isEconomyFee); //todo improve that logic
+        BRSharedPrefs.putFeeTime(app, System.currentTimeMillis()); //store the time of the last successful fee fetch
     }
 
     private static String urlGET(Context app, String myURL) {

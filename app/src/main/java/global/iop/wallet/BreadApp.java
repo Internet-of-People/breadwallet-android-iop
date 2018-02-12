@@ -51,7 +51,7 @@ public class BreadApp extends Application {
     public static int DISPLAY_HEIGHT_PX;
     FingerprintManager mFingerprintManager;
     // host is the server(s) on which the API is hosted
-    public static String HOST = "api.breadwallet.com";
+    public static String HOST = "api.iop.global";
     private static List<OnAppBackgrounded> listeners;
     private static Timer isBackgroundChecker;
     public static AtomicInteger activityCounter = new AtomicInteger();
@@ -65,7 +65,7 @@ public class BreadApp extends Application {
         super.onCreate();
         if (Utils.isEmulatorOrDebug(this)) {
 //            BRKeyStore.putFailCount(0, this);
-            HOST = "stage2.breadwallet.com";
+            HOST = "stage.iop.global";
             FirebaseCrash.setCrashCollectionEnabled(false);
 //            FirebaseCrash.report(new RuntimeException("test with new json file"));
         }
