@@ -9,18 +9,18 @@ import android.os.Build;
 import android.os.NetworkOnMainThreadException;
 import android.util.Log;
 
-import com.breadwallet.BreadApp;
-import com.breadwallet.BuildConfig;
-import com.breadwallet.presenter.activities.util.ActivityUTILS;
-import com.breadwallet.tools.crypto.Base58;
-import com.breadwallet.tools.manager.BRApiManager;
-import com.breadwallet.tools.manager.BRReportsManager;
-import com.breadwallet.tools.manager.BRSharedPrefs;
-import com.breadwallet.tools.crypto.CryptoHelper;
-import com.breadwallet.tools.security.BRKeyStore;
-import com.breadwallet.tools.threads.BRExecutor;
-import com.breadwallet.tools.util.Utils;
-import com.breadwallet.wallet.BRWalletManager;
+import global.iop.wallet.BreadApp;
+import global.iop.wallet.BuildConfig;
+import global.iop.wallet.presenter.activities.util.ActivityUTILS;
+import global.iop.wallet.tools.crypto.Base58;
+import global.iop.wallet.tools.manager.BRApiManager;
+import global.iop.wallet.tools.manager.BRReportsManager;
+import global.iop.wallet.tools.manager.BRSharedPrefs;
+import global.iop.wallet.tools.crypto.CryptoHelper;
+import global.iop.wallet.tools.security.BRKeyStore;
+import global.iop.wallet.tools.threads.BRExecutor;
+import global.iop.wallet.tools.util.Utils;
+import global.iop.wallet.wallet.BRWalletManager;
 import com.jniwrappers.BRKey;
 import com.platform.kvstore.RemoteKVStore;
 import com.platform.kvstore.ReplicatedKVStore;
@@ -62,7 +62,7 @@ import okhttp3.ResponseBody;
 import okio.Buffer;
 import okio.BufferedSink;
 
-import static com.breadwallet.tools.util.BRCompressor.gZipExtract;
+import static global.iop.wallet.tools.util.BRCompressor.gZipExtract;
 
 
 /**

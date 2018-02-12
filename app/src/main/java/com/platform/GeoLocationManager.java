@@ -1,7 +1,6 @@
 package com.platform;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -12,10 +11,10 @@ import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 
 
-import com.breadwallet.BreadApp;
-import com.breadwallet.tools.manager.BRReportsManager;
-import com.breadwallet.tools.threads.BRExecutor;
-import com.breadwallet.tools.util.Utils;
+import global.iop.wallet.BreadApp;
+import global.iop.wallet.tools.manager.BRReportsManager;
+import global.iop.wallet.tools.threads.BRExecutor;
+import global.iop.wallet.tools.util.Utils;
 
 import org.eclipse.jetty.continuation.Continuation;
 import org.eclipse.jetty.server.Request;

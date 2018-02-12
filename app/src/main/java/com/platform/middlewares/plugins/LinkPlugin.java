@@ -6,11 +6,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
 
-import com.breadwallet.BreadApp;
-import com.breadwallet.R;
-import com.breadwallet.presenter.activities.settings.WebViewActivity;
-import com.breadwallet.tools.manager.BRReportsManager;
-import com.breadwallet.tools.util.Utils;
+import global.iop.wallet.BreadApp;
+import global.iop.wallet.R;
+import global.iop.wallet.presenter.activities.settings.WebViewActivity;
+import global.iop.wallet.tools.manager.BRReportsManager;
+import global.iop.wallet.tools.util.Utils;
 import com.platform.BRHTTPHelper;
 import com.platform.interfaces.Plugin;
 

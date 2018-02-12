@@ -12,14 +12,14 @@ import android.support.v4.content.ContextCompat;
 import android.util.Base64;
 import android.util.Log;
 
-import com.breadwallet.BreadApp;
-import com.breadwallet.R;
-import com.breadwallet.presenter.activities.camera.CameraActivity;
-import com.breadwallet.presenter.customviews.BRDialogView;
-import com.breadwallet.tools.animation.BRDialog;
-import com.breadwallet.tools.crypto.CryptoHelper;
-import com.breadwallet.tools.threads.BRExecutor;
-import com.breadwallet.tools.util.BRConstants;
+import global.iop.wallet.BreadApp;
+import global.iop.wallet.R;
+import global.iop.wallet.presenter.activities.camera.CameraActivity;
+import global.iop.wallet.presenter.customviews.BRDialogView;
+import global.iop.wallet.tools.animation.BRDialog;
+import global.iop.wallet.tools.crypto.CryptoHelper;
+import global.iop.wallet.tools.threads.BRExecutor;
+import global.iop.wallet.tools.util.BRConstants;
 import com.platform.BRHTTPHelper;
 import com.platform.interfaces.Plugin;
 
@@ -37,9 +37,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
