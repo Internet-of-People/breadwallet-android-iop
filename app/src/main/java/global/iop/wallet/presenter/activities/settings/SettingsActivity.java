@@ -193,6 +193,7 @@ public class SettingsActivity extends BRActivity {
 
         items.add(new BRSettingsItem("", "", null, true));
 
+        /* hide share setting
         items.add(new BRSettingsItem(getString(R.string.Settings_shareData), "", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -200,7 +201,7 @@ public class SettingsActivity extends BRActivity {
                 startActivity(intent);
                 overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
             }
-        }, false));
+        }, false)); */
         boolean eaEnabled = APIClient.getInstance(this).isFeatureEnabled(APIClient.FeatureFlags.EARLY_ACCESS.toString());
         eaEnabled = false;
         if (eaEnabled)

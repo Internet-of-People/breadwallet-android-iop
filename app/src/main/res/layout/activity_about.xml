@@ -11,17 +11,18 @@
 
     <View
         android:id="@+id/view3"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:background="@mipmap/ic_launcher_foreground"
+        android:background="@drawable/logo_iop"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"/>
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <global.iop.wallet.presenter.customviews.BRText
+        android:visibility="gone"
         app:customTFont="Celevenia.otf"
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
@@ -158,6 +159,7 @@
         android:id="@+id/info_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
         android:layout_marginBottom="40dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
