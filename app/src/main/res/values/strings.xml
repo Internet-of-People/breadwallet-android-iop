@@ -4,6 +4,8 @@
   <string name="About.appName.android">IOP Wallet</string>
   <!-- About screen blog label -->
   <string name="About.blog">Blog</string>
+  <string name="About.telegram" translatable="false">Telegram</string>
+  <string name="About.homepage" translatable="false">Homepage</string>
   <!-- About screen footer -->
   <string name="About.footer">Made by the global IOP Wallet team. Version %1$s</string>
   <!-- Privay Policy button label -->
