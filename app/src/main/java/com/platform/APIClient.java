@@ -317,10 +317,11 @@ public class APIClient {
         boolean isTestNet = BuildConfig.BITCOIN_TESTNET;
         String lang = getCurrentLocale(ctx);
         Request request = locRequest.newBuilder().header("X-Testflight", isTestVersion ? "true" : "false").header("X-Bitcoin-Testnet", isTestNet ? "true" : "false").header("Accept-Language", lang).build();
+        /*
         if (needsAuth) {
             request = authenticateRequest(request);
             if (request == null) return null;
-        }
+        }*/
 
         Response response = null;
         ResponseBody postReqBody = null;
@@ -744,6 +745,7 @@ public class APIClient {
         }
         platformUpdating = true;
 
+        /*
         //update Bundle
         BRExecutor.getInstance().forBackgroundTasks().execute(new Runnable() {
             @Override
@@ -789,7 +791,8 @@ public class APIClient {
                 Log.d(TAG, "syncKvStore: DONE in " + (endTime - startTime) + "ms");
                 itemFinished();
             }
-        });
+        });*/
+
 
         //update fee
         BRExecutor.getInstance().forBackgroundTasks().execute(new Runnable() {
