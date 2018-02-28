@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<global.iop.wallet.presenter.customviews.BRLockScreenConstraintLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_pit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bread_gradient"
+    android:background="@drawable/gradient_background"
     tools:context="global.iop.wallet.presenter.activities.LoginActivity">
 
     <ImageView
         android:id="@+id/title"
-        android:layout_width="180dp"
-        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:gravity="center_horizontal"
-        android:src="@drawable/ic_bread_logo_white"
+        android:src="@drawable/logo_iop_white"
         android:textColor="@color/white"
         android:textSize="48sp"
         app:customTFont="Celevenia.otf"
@@ -191,4 +191,4 @@
         app:layout_constraintBottom_toTopOf="@+id/brkeyboard"
         app:layout_constraintRight_toRightOf="parent"/>
 
-</global.iop.wallet.presenter.customviews.BRLockScreenConstraintLayout>
+</android.support.constraint.ConstraintLayout>

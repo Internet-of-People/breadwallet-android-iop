@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<global.iop.wallet.presenter.customviews.BRLockScreenConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
                                                                     android:id="@+id/intro_layout"
                                                                     android:layout_width="match_parent"
                                                                     android:layout_height="match_parent"
-                                                                    android:background="@drawable/bread_gradient"
+                                                                    android:background="@drawable/gradient_background"
                                                                     android:orientation="vertical">
 
     <ImageView
@@ -12,7 +12,7 @@
         android:layout_width="280dp"
         android:layout_height="65dp"
         android:layout_marginTop="96dp"
-        android:src="@drawable/ic_bread_logo_white"
+        android:src="@drawable/about_banner_invert"
 
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginRight="8dp"
@@ -104,4 +104,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"/>
 
-</global.iop.wallet.presenter.customviews.BRLockScreenConstraintLayout>
+</android.support.constraint.ConstraintLayout>
