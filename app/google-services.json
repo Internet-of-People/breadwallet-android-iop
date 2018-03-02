@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "393316183314",
+    "firebase_url": "https://iop-wallet.firebaseio.com",
+    "project_id": "iop-wallet",
+    "storage_bucket": "iop-wallet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393316183314:android:92d53ed3f414e20d",
+        "android_client_info": {
+          "package_name": "global.iop.wallet.testnet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393316183314-gfq6fo894e0tf5rv6ktoovlpp8tl1n42.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "global.iop.wallet.testnet",
+            "certificate_hash": "ba2d79547a429229407947170f8d1d040239598c"
+          }
+        },
+        {
+          "client_id": "393316183314-fqrs8nv8e7dp9ojvinotfsh4ddnje422.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACnn2k11Wdrlv1fWGKVDWyH3ibzapHkMI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393316183314-dt4njd1f4h5c8iqv8gr0psi5jkphtj71.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "global.iop.wallet"
+              }
+            },
+            {
+              "client_id": "393316183314-fqrs8nv8e7dp9ojvinotfsh4ddnje422.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393316183314:android:2dc3ef99ecdfcce2",
+        "android_client_info": {
+          "package_name": "global.iop.wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393316183314-olaidjv97k86ca922mijv3ek606uh3mq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "global.iop.wallet",
+            "certificate_hash": "ba2d79547a429229407947170f8d1d040239598c"
+          }
+        },
+        {
+          "client_id": "393316183314-fqrs8nv8e7dp9ojvinotfsh4ddnje422.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACnn2k11Wdrlv1fWGKVDWyH3ibzapHkMI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393316183314-dt4njd1f4h5c8iqv8gr0psi5jkphtj71.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "global.iop.wallet"
+              }
+            },
+            {
+              "client_id": "393316183314-fqrs8nv8e7dp9ojvinotfsh4ddnje422.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
