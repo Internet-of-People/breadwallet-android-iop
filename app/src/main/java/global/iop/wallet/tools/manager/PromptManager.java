@@ -18,7 +18,6 @@ import global.iop.wallet.wallet.BRPeerManager;
 import static global.iop.wallet.tools.manager.PromptManager.PromptItem.FINGER_PRINT;
 import static global.iop.wallet.tools.manager.PromptManager.PromptItem.PAPER_KEY;
 import static global.iop.wallet.tools.manager.PromptManager.PromptItem.RECOMMEND_RESCAN;
-import static global.iop.wallet.tools.manager.PromptManager.PromptItem.SHARE_DATA;
 import static global.iop.wallet.tools.manager.PromptManager.PromptItem.UPGRADE_PIN;
 
 /**
@@ -64,7 +63,7 @@ public class PromptManager {
         UPGRADE_PIN,
         RECOMMEND_RESCAN,
         NO_PASSCODE,
-        SHARE_DATA
+        //SHARE_DATA
     }
 
     public class PromptInfo {
@@ -106,7 +105,9 @@ public class PromptManager {
         if (shouldPrompt(app, UPGRADE_PIN)) return UPGRADE_PIN;
         if (shouldPrompt(app, PAPER_KEY)) return PAPER_KEY;
         if (shouldPrompt(app, FINGER_PRINT)) return FINGER_PRINT;
+        /*
         if (shouldPrompt(app, SHARE_DATA)) return SHARE_DATA;
+        */
         return null;
     }
 
@@ -153,6 +154,7 @@ public class PromptManager {
                         });
                     }
                 });
+            /*
             case SHARE_DATA:
                 return new PromptInfo(app.getString(R.string.Prompts_ShareData_title), app.getString(R.string.Prompts_ShareData_body), new View.OnClickListener() {
                     @Override
@@ -167,6 +169,7 @@ public class PromptManager {
                         });
                     }
                 });
+            */
 
         }
         return null;
@@ -192,9 +195,10 @@ public class PromptManager {
                 return "recommendRescanPrompt";
             case NO_PASSCODE:
                 return "noPasscodePrompt";
+            /*
             case SHARE_DATA:
                 return "shareDataPrompt";
-
+            */
         }
         return null;
     }
