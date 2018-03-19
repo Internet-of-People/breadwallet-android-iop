@@ -215,9 +215,9 @@
   <!-- Ignore jailbreak warning button -->
   <string name="JailbreakWarnings.ignore">Ignorer</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithBalance">SÉCURITÉ DU DISPOSITIF COMPROMISE\n  Toute application « évasive » peut accéder aux données du porte-clé de IOP Wallet et voler vos bitcoins ! Détruisez ce portefeuille immédiatement et restaurez-le sur un appareil sécurisé.</string>
+  <string name="JailbreakWarnings.messageWithBalance">SÉCURITÉ DU DISPOSITIF COMPROMISE\n  Toute application « évasive » peut accéder aux données du porte-clé de IOP Wallet et voler vos IOPs ! Détruisez ce portefeuille immédiatement et restaurez-le sur un appareil sécurisé.</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithoutBalance">SÉCURITÉ DU DISPOSITIF COMPROMISE\n  Toute application « évasive » peut accéder aux données du porte-clé de IOP Wallet et voler vos bitcoins. N\'utilisez IOP Wallet que sur un appareil non évasif.</string>
+  <string name="JailbreakWarnings.messageWithoutBalance">SÉCURITÉ DU DISPOSITIF COMPROMISE\n  Toute application « évasive » peut accéder aux données du porte-clé de IOP Wallet et voler vos IOPs. N\'utilisez IOP Wallet que sur un appareil non évasif.</string>
   <!-- Jailbreak warning title -->
   <string name="JailbreakWarnings.title">AVERTISSEMENT</string>
   <!-- Wipe wallet button -->
@@ -235,7 +235,7 @@
   <!-- Manage wallet modal title -->
   <string name="ManageWallet.title">Gérer le portefeuille</string>
   <!-- Buy iop title -->
-  <string name="MenuButton.buy">Acheter des bitcoins</string>
+  <string name="MenuButton.buy">Acheter des IOPs</string>
   <!-- Menu button title -->
   <string name="MenuButton.lock">Verrouiller le portefeuille</string>
   <!-- Menu button title -->

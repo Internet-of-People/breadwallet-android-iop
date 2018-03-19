@@ -171,7 +171,7 @@
   <!-- Checking private key balance progress view text -->
   <string name="Import.checking">Kontrollerar privat nyckelsaldo...</string>
   <!-- Sweep private key confirmation message -->
-  <string name="Import.confirm">Skicka %1$s från denna privata nyckel till din plånbok? Bitcoins nätverk tar en avgift på %2$s.</string>
+  <string name="Import.confirm">Skicka %1$s från denna privata nyckel till din plånbok? IOPs nätverk tar en avgift på %2$s.</string>
   <!-- Duplicate key error message -->
   <string name="Import.Error.duplicate">Denna privata nyckel finns redan i din plånbok.</string>
   <!-- empty private key error message -->
@@ -379,7 +379,7 @@
   <!-- extimated time -->
   <string name="ReScan.body1">20-45 minuter</string>
   <!-- Syncing explanation -->
-  <string name="ReScan.body2">Om en transaktion visar sig som klar i bitcoins nätverk men inte i IOP Wallet.</string>
+  <string name="ReScan.body2">Om en transaktion visar sig som klar i IOPs nätverk men inte i IOP Wallet.</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body3">Du får gång på gång ett meddelande som säger att din transaktion avvisades.</string>
   <!-- Start Sync button label -->

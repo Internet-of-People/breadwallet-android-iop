@@ -215,9 +215,9 @@
   <!-- Ignore jailbreak warning button -->
   <string name="JailbreakWarnings.ignore">Ignorieren</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithBalance">DAS GERÄT IST NICHT LÄNGER SICHER\nJede beliebige „Jailbreak“-App kann auf Breads Keychain-Daten zugreifen und deine Bitcoins stehlen! Lösche dieses Wallet unverzüglich und stelle es auf einem sicheren Gerät wieder her.</string>
+  <string name="JailbreakWarnings.messageWithBalance">DAS GERÄT IST NICHT LÄNGER SICHER\nJede beliebige „Jailbreak“-App kann auf Breads Keychain-Daten zugreifen und deine IOPs stehlen! Lösche dieses Wallet unverzüglich und stelle es auf einem sicheren Gerät wieder her.</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithoutBalance">DAS GERÄT IST NICHT LÄNGER SICHER\nJede beliebige „Jailbreak“-App kann auf Breads Keychain-Daten zugreifen und deine Bitcoins stehlen. Bitte setze IOP Wallet ausschließlich auf Geräten ohne Jailbreak ein.</string>
+  <string name="JailbreakWarnings.messageWithoutBalance">DAS GERÄT IST NICHT LÄNGER SICHER\nJede beliebige „Jailbreak“-App kann auf Breads Keychain-Daten zugreifen und deine IOPs stehlen. Bitte setze IOP Wallet ausschließlich auf Geräten ohne Jailbreak ein.</string>
   <!-- Jailbreak warning title -->
   <string name="JailbreakWarnings.title">ACHTUNG</string>
   <!-- Wipe wallet button -->
@@ -405,7 +405,7 @@
   <!-- Security Center Info -->
   <string name="SecurityCenter.info">Aktiviere alle Sicherheitsfunktionen für maximalen Schutz.</string>
   <!-- Paper Key button description -->
-  <string name="SecurityCenter.paperKeyDescription">Die einzige Möglichkeit, wie du auf deine Bitcoins zugreifen kannst, falls du dein Smartphone verlierst oder wechselst.</string>
+  <string name="SecurityCenter.paperKeyDescription">Die einzige Möglichkeit, wie du auf deine IOPs zugreifen kannst, falls du dein Smartphone verlierst oder wechselst.</string>
   <!-- Paper Key button title -->
   <string name="SecurityCenter.paperKeyTitle">Offlineschlüssel</string>
   <!-- PIN button description -->
@@ -663,7 +663,7 @@
   <!-- Wallet unlocked message -->
   <string name="UnlockScreen.unlocked">Wallet entsperrt</string>
   <!-- Update PIN caption text -->
-  <string name="UpdatePin.caption">Merke dir diese PIN. Falls du sie vergisst, kannst du nicht mehr auf deine Bitcoins zugreifen.</string>
+  <string name="UpdatePin.caption">Merke dir diese PIN. Falls du sie vergisst, kannst du nicht mehr auf deine IOPs zugreifen.</string>
   <!-- PIN creation info. -->
   <string name="UpdatePin.createInstruction">Deine PIN wird verwendet, um dein IOP Wallet zu entsperren und Geld zu versenden.</string>
   <!-- Update PIN title -->

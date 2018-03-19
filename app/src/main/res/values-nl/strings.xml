@@ -215,9 +215,9 @@
   <!-- Ignore jailbreak warning button -->
   <string name="JailbreakWarnings.ignore">Negeren</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithBalance">APPARAAT BEVEILIGING BESCHADIGD\nElke \'jailbreak\' app heeft toegang tot de sleutelhanger data van IOP Wallet en kan hiermee je Bitcoins stelen! Wis deze portemonnee direct en herstel het op een veilig apparaat.</string>
+  <string name="JailbreakWarnings.messageWithBalance">APPARAAT BEVEILIGING BESCHADIGD\nElke \'jailbreak\' app heeft toegang tot de sleutelhanger data van IOP Wallet en kan hiermee je IOPs stelen! Wis deze portemonnee direct en herstel het op een veilig apparaat.</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithoutBalance">APPARAAT BEVEILIGING BESCHADIGD\nElke \'jailbreak\' app heeft toegang tot de sleutelhanger data van IOP Wallet en kan hiermee je Bitcoins stelen. Gebruik IOP Wallet a.u.b. alleen op een niet-gejailbreakt apparaat.</string>
+  <string name="JailbreakWarnings.messageWithoutBalance">APPARAAT BEVEILIGING BESCHADIGD\nElke \'jailbreak\' app heeft toegang tot de sleutelhanger data van IOP Wallet en kan hiermee je IOPs stelen. Gebruik IOP Wallet a.u.b. alleen op een niet-gejailbreakt apparaat.</string>
   <!-- Jailbreak warning title -->
   <string name="JailbreakWarnings.title">WAARSCHUWING</string>
   <!-- Wipe wallet button -->
@@ -235,7 +235,7 @@
   <!-- Manage wallet modal title -->
   <string name="ManageWallet.title">Portemonnee Beheren</string>
   <!-- Buy iop title -->
-  <string name="MenuButton.buy">Bitcoins Kopen</string>
+  <string name="MenuButton.buy">IOPs Kopen</string>
   <!-- Menu button title -->
   <string name="MenuButton.lock">Portemonnee Vergrendelen</string>
   <!-- Menu button title -->
@@ -405,7 +405,7 @@
   <!-- Security Center Info -->
   <string name="SecurityCenter.info">Activeer alle veiligheidsmaatregelen voor maximale bescherming.</string>
   <!-- Paper Key button description -->
-  <string name="SecurityCenter.paperKeyDescription">De enige manier om toegang te hebben tot je Bitcoins is als je je telefoon verliest of upgrade.</string>
+  <string name="SecurityCenter.paperKeyDescription">De enige manier om toegang te hebben tot je IOPs is als je je telefoon verliest of upgrade.</string>
   <!-- Paper Key button title -->
   <string name="SecurityCenter.paperKeyTitle">Papieren Sleutel</string>
   <!-- PIN button description -->
@@ -663,7 +663,7 @@
   <!-- Wallet unlocked message -->
   <string name="UnlockScreen.unlocked">Portemonnee Ontgrendeld</string>
   <!-- Update PIN caption text -->
-  <string name="UpdatePin.caption">Onthoud deze PIN. Als je deze vergeet, zul je niet in staat zijn om bij je Bitcoins te kunnen.</string>
+  <string name="UpdatePin.caption">Onthoud deze PIN. Als je deze vergeet, zul je niet in staat zijn om bij je IOPs te kunnen.</string>
   <!-- PIN creation info. -->
   <string name="UpdatePin.createInstruction">Je PIN zal worden gebruikt om je IOP Wallet te ontgrendelen en geld te versturen.</string>
   <!-- Update PIN title -->

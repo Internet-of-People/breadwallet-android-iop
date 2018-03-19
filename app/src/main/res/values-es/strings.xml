@@ -215,9 +215,9 @@
   <!-- Ignore jailbreak warning button -->
   <string name="JailbreakWarnings.ignore">Ignorar</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithBalance">SEGURIDAD DEL DISPOSITIVO COMPROMETIDA\nCualquier aplicación \"jailbreak\" puede acceder a los datos del llavero de IOP Wallet y robar tus bitcoins. Borra esta cartera de inmediato y restáurala en un dispositivo seguro.</string>
+  <string name="JailbreakWarnings.messageWithBalance">SEGURIDAD DEL DISPOSITIVO COMPROMETIDA\nCualquier aplicación \"jailbreak\" puede acceder a los datos del llavero de IOP Wallet y robar tus IOPs. Borra esta cartera de inmediato y restáurala en un dispositivo seguro.</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithoutBalance">SEGURIDAD DEL DISPOSITIVO COMPROMETIDA\nCualquier aplicación \"jailbreak\" puede acceder a los datos del llavero de IOP Wallet y robar tus bitcoins. Usa IOP Wallet únicamente en un dispositivo sin jailbreak.</string>
+  <string name="JailbreakWarnings.messageWithoutBalance">SEGURIDAD DEL DISPOSITIVO COMPROMETIDA\nCualquier aplicación \"jailbreak\" puede acceder a los datos del llavero de IOP Wallet y robar tus IOPs. Usa IOP Wallet únicamente en un dispositivo sin jailbreak.</string>
   <!-- Jailbreak warning title -->
   <string name="JailbreakWarnings.title">AVISO</string>
   <!-- Wipe wallet button -->
@@ -235,7 +235,7 @@
   <!-- Manage wallet modal title -->
   <string name="ManageWallet.title">Gestionar cartera</string>
   <!-- Buy iop title -->
-  <string name="MenuButton.buy">Comprar bitcoins</string>
+  <string name="MenuButton.buy">Comprar IOPs</string>
   <!-- Menu button title -->
   <string name="MenuButton.lock">Bloquear cartera</string>
   <!-- Menu button title -->
@@ -279,9 +279,9 @@
   <!-- Payment too small alert title -->
   <string name="PaymentProtocol.Errors.smallOutputError">No se ha podido realizar el pago</string>
   <!-- Amount too small error message -->
-  <string name="PaymentProtocol.Errors.smallPayment">Los pagos en bitcoins no pueden ser inferiores a %1$s.</string>
+  <string name="PaymentProtocol.Errors.smallPayment">Los pagos en IOPs no pueden ser inferiores a %1$s.</string>
   <!-- Output too small error message. -->
-  <string name="PaymentProtocol.Errors.smallTransaction">La transacción de bitcoins no puede ser inferior a %1$s.</string>
+  <string name="PaymentProtocol.Errors.smallTransaction">La transacción de IOPs no puede ser inferior a %1$s.</string>
   <!-- Unsupported signature type payment protocol error message -->
   <string name="PaymentProtocol.Errors.unsupportedSignatureType">tipo de firma no compatible</string>
   <!-- Untrusted certificate payment protocol error message -->
