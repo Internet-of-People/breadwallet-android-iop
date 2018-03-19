@@ -249,8 +249,8 @@ public class BRKeyStore {
         keyGenerator.init(new KeyGenParameterSpec.Builder(alias,
                 KeyProperties.PURPOSE_ENCRYPT | KeyProperties.PURPOSE_DECRYPT)
                 .setBlockModes(NEW_BLOCK_MODE)
-                .setUserAuthenticationRequired(auth_required)
-                .setUserAuthenticationValidityDurationSeconds(AUTH_DURATION_SEC)
+                //.setUserAuthenticationRequired(auth_required)
+                //.setUserAuthenticationValidityDurationSeconds(AUTH_DURATION_SEC)
                 .setRandomizedEncryptionRequired(false)
                 .setEncryptionPaddings(NEW_PADDING)
                 .build());

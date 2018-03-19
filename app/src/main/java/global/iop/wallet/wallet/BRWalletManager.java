@@ -470,7 +470,7 @@ public class BRWalletManager {
 
     public void startTheWalletIfExists(final Activity app) {
         final BRWalletManager m = BRWalletManager.getInstance();
-        if (!m.isPasscodeEnabled(app)) {
+        /*if (!m.isPasscodeEnabled(app)) {
             //Device passcode/password should be enabled for the app to work
             BRDialog.showCustomDialog(app, app.getString(R.string.JailbreakWarnings_title), app.getString(R.string.Prompts_NoScreenLock_body_android),
                     app.getString(R.string.AccessibilityLabels_close), null, new BRDialogView.BROnClickListener() {
@@ -485,12 +485,13 @@ public class BRWalletManager {
                         }
                     }, 0);
         } else {
+        */
             if (!m.noWallet(app)) {
                 BRAnimator.startBreadActivity(app, true);
             }
             //else just sit in the intro screen
 
-        }
+        //}
     }
 
     @WorkerThread
