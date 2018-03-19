@@ -15,7 +15,9 @@ import global.iop.wallet.R;
 import global.iop.wallet.presenter.activities.BreadActivity;
 import global.iop.wallet.presenter.activities.SetPinActivity;
 import global.iop.wallet.presenter.activities.util.BRActivity;
+import global.iop.wallet.presenter.customviews.BRDialogView;
 import global.iop.wallet.tools.animation.BRAnimator;
+import global.iop.wallet.tools.animation.BRDialog;
 import global.iop.wallet.tools.manager.BRReportsManager;
 import global.iop.wallet.tools.security.BRKeyStore;
 import global.iop.wallet.tools.security.PostAuth;
@@ -123,6 +125,14 @@ public class IntroActivity extends BRActivity implements Serializable {
             }
         }, 1000);
 
+        //Show disclaimer
+        BRDialog.showCustomDialog(this, getString(R.string.Start_disclaimer_title),
+                getString(R.string.Start_disclaimer_text), getString(R.string.AccessibilityLabels_close), null, new BRDialogView.BROnClickListener() {
+                    @Override
+                    public void onClick(BRDialogView brDialogView) {
+                        brDialogView.dismiss();
+                    }
+                }, null, null, 0);
     }
 
     private void updateBundles() {
