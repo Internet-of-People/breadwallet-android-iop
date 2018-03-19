@@ -93,9 +93,10 @@ public class PromptManager {
                 return BRKeyStore.getPinCode(app).length() != 6;
             case RECOMMEND_RESCAN:
                 return BRSharedPrefs.getScanRecommended(app);
+            /*
             case SHARE_DATA:
                 return !BRSharedPrefs.getShareData(app) && !BRSharedPrefs.getShareDataDismissed(app);
-
+            */
         }
         return false;
     }
