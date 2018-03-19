@@ -9,8 +9,8 @@ android {
         applicationId = 'global.iop.wallet'
         minSdkVersion 23
         targetSdkVersion 26
-        versionCode 3
-        versionName "1.0.2"
+        versionCode 4
+        versionName "1.0.3"
         multiDexEnabled true
 
         // Similar to other properties in the defaultConfig block,

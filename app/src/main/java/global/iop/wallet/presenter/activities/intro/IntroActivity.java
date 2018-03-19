@@ -127,7 +127,7 @@ public class IntroActivity extends BRActivity implements Serializable {
 
         //Show disclaimer
         BRDialog.showCustomDialog(this, getString(R.string.Start_disclaimer_title),
-                getString(R.string.Start_disclaimer_text), getString(R.string.AccessibilityLabels_close), null, new BRDialogView.BROnClickListener() {
+                getString(R.string.Start_disclaimer_text), getString(R.string.Start_disclaimer_accept), null, new BRDialogView.BROnClickListener() {
                     @Override
                     public void onClick(BRDialogView brDialogView) {
                         brDialogView.dismiss();
