@@ -189,13 +189,13 @@
   <!-- Caption for graphics -->
   <string name="Import.leftCaption">Zu importierendes Wallet</string>
   <!-- Import wallet intro screen message -->
-  <string name="Import.message">Der Import eines Wallets überträgt das gesamte Guthaben deines anderen Wallets mit einer einzigen Transaktion in dein IOP Wallet-Wallet.</string>
+  <string name="Import.message">Der Import eines Wallets überträgt das gesamte Guthaben deines anderen Wallets mit einer einzigen Transaktion in dein IOP Wallet.</string>
   <!-- Enter password alert view title -->
   <string name="Import.password">Dieser private Schlüssel ist passwortgeschützt.</string>
   <!-- password textfield placeholder -->
   <string name="Import.passwordPlaceholder">Passwort</string>
   <!-- Caption for graphics -->
-  <string name="Import.rightCaption">Dein IOP Wallet-Wallet</string>
+  <string name="Import.rightCaption">Dein IOP Wallet</string>
   <!-- Scan Private key button label -->
   <string name="Import.scan">Privaten Schlüssel scannen</string>
   <!-- Import wallet success alert title -->
@@ -721,9 +721,9 @@
   <!-- Enter phrase to wipe wallet instruction. -->
   <string name="WipeWallet.instruction">Geben Sie die Wiederherstellungsphrase des Wallets ein, um es zu löschen und die Wiederherstellung eines anderen Wallets zu beginnen. Ihr aktueller Kontostand bleibt mit dieser Phrase verbunden.</string>
   <!-- Start wipe wallet view message -->
-  <string name="WipeWallet.startMessage">Das Anlegen oder Wiederherstellen einer weiteren Wallet ermöglicht es Ihnen, auf diesem Gerät auf eine andere IOP Wallet-Wallet zuzugreifen und diese zu verwalten.</string>
+  <string name="WipeWallet.startMessage">Das Anlegen oder Wiederherstellen einer weiteren Wallet ermöglicht es Ihnen, auf diesem Gerät auf eine andere IOP Wallet zuzugreifen und diese zu verwalten.</string>
   <!-- Start wipe wallet view warning -->
-  <string name="WipeWallet.startWarning">Sie werden von diesem Gerät aus keinen Zugriff auf Ihr aktuelles IOP Wallet-Wallet mehr haben. Der Saldo verbleibt auf dem Satz.</string>
+  <string name="WipeWallet.startWarning">Sie werden von diesem Gerät aus keinen Zugriff auf Ihr aktuelles IOP Wallet mehr haben. Der Saldo verbleibt auf dem Satz.</string>
   <!-- Wipe wallet navigation item title. -->
   <string name="WipeWallet.title">Ein anderes Wallet beginnen oder wiederherstellen</string>
   <!-- Wipe wallet button title -->
