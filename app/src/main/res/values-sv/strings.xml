@@ -339,7 +339,7 @@
   <!-- Share button label -->
   <string name="Receive.share">Dela</string>
   <!-- Share via text message (SMS) -->
-  <string name="Receive.textButton">Textmeddelande</string>
+  <string name="Receive.textButton">Övriga</string>
   <!-- Receive modal title -->
   <string name="Receive.title">Ta emot</string>
   <!-- Done button text -->

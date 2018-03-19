@@ -339,7 +339,7 @@
   <!-- Share button label -->
   <string name="Receive.share">Partager</string>
   <!-- Share via text message (SMS) -->
-  <string name="Receive.textButton">Message texte</string>
+  <string name="Receive.textButton">Autres</string>
   <!-- Receive modal title -->
   <string name="Receive.title">Recevoir</string>
   <!-- Done button text -->

@@ -3,6 +3,7 @@ package global.iop.wallet.presenter.fragments;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -158,7 +159,12 @@ public class FragmentReceive extends Fragment {
             public void onClick(View v) {
                 if (!BRAnimator.isClickAllowed()) return;
                 String bitcoinUri = Utils.createBitcoinUrl(receiveAddress, 0, null, null, null);
-                QRUtils.share("sms:", getActivity(), bitcoinUri);
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, String.format("This is my IOP address: %s", bitcoinUri));
+                sendIntent.setType("text/plain");
+                startActivity(sendIntent);
+                //QRUtils.share("sms:", getActivity(), bitcoinUri);
             }
         });
         shareButton.setOnClickListener(new View.OnClickListener() {
