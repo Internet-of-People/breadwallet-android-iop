@@ -739,4 +739,5 @@
   <!-- 1 of 3 -->
   <string name="Start.disclaimer.text" translatable="false">You are responsible for safekeeping your passwords, private key pairs, PINs and any other codes you use to access the software. IF YOU LOSE ACCESS TO YOUR IOP WALLET OR YOUR PAPER KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR CORRESPONDING PASSWORDS, YOU ACKNOWLEDGE AND AGREE THAT ANY IOPS YOU HAVE ASSOCIATED WITH THAT WALLET WILL BECOME INACCESSIBLE.</string>
   <string name="Start.disclaimer.accept" translatable="false">Accept</string>
+    <string name="WritePaperPhrase.step">%1$d / %2$d</string>
 </resources>
