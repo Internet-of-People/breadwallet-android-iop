@@ -231,7 +231,7 @@ public class AuthManager {
         FragmentFingerprint fingerprintFragment;
         FragmentPin breadPin;
 
-        if (keyguardManager.isKeyguardSecure()) {
+        //if (keyguardManager.isKeyguardSecure()) {
             if (useFingerPrint) {
                 fingerprintFragment = new FragmentFingerprint();
                 Bundle args = new Bundle();
@@ -260,7 +260,7 @@ public class AuthManager {
                     transaction.commit();
                 }
             }
-        } else {
+        /*} else {
             BRDialog.showCustomDialog(app,
                     "",
                     app.getString(R.string.Prompts_NoScreenLock_body_android),
@@ -277,7 +277,7 @@ public class AuthManager {
                             app.finish();
                         }
                     }, 0);
-        }
+        }*/
 
     }
 
