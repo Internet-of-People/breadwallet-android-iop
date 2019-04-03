@@ -76,10 +76,9 @@ add_library( # Specifies the name of the library.
 
 
 include_directories(src/main/jni/breadwallet-core/)
-include_directories(src/main/secp/secp256k1/include/)
-include_directories(src/main/secp/secp256k1/src/)
-include_directories(src/main/secp/secp256k1/)
-include_directories(src/main/secp/)
+include_directories(src/main/jni/breadwallet-core/secp256k1/include/)
+include_directories(src/main/jni/breadwallet-core/secp256k1/src/)
+include_directories(src/main/jni/breadwallet-core/secp256k1/)
 
 # add lib dependencies
 target_link_libraries(
